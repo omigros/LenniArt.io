@@ -1,4 +1,3 @@
-<img src="../LenniArt.io/assets/images/LENNI.png" widtg="100%">
 
 <center> 
 
