@@ -1,5 +1,6 @@
 <center>
 
+
 # [Lenni Art](https://omigros.github.io/LenniArt.io/) </center>
 <h2><p style="text-align: center;">Студентческая работа (ТУСУР)<br>
 Сайт на основе дизайна Lenni Art на Figma</p></h2>
