@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lenni Art</title>
+  <link rel="stylesheet" href="styles/styles.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&family=Roboto&display=swap">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+  <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta name="apple-mobile-web-app-title" content="Lenni Art">
+  <meta name="application-name" content="Lenni Art">
+  <meta name="theme-color" content="#dedede">
+
+  <meta name="description" content="Арт—пространство для людей, горящих сердец и делом">
+  <meta name="keywords" content="Lenni Art, пространство, мероприятия">
+  <meta property="og:title" content="Lenni Art" />
+  <meta property="og:description" content="Арт пространство для людей, горящих сердцем и делом" />
+  <meta property="og:image" content="/assets/images/lenni-art.jpg">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lenni-art.ru/" />
+</head>
+
+<body class="body">
+  <header class="page-header">
+    <div class="page-header__container">
+      <a href="index.html" class="page-header__logo">
+        <svg class="page-header__logo-icon">
+          <use xlink:href="assets/icons/symbols.svg#logo"></use>
+        </svg>
+      </a>
+      <nav class="page-header__nav">
+        <a href="events.html" class="page-header__nav-link">Мероприятия</a>
+        <a href="#" class="page-header__nav-link">Блог</a>
+        <a href="#" class="page-header__nav-link">О нас</a>
+        <a href="#" class="page-header__nav-link">Контакты</a>
+
+        <div class="page-header__nav-user">
+          <a href="#" class="page-header__nav-user-link">Александр С.</a>
+          <a href="#" class="page-header__nav-logout">
+            <svg class="page-header__nav-logout-icon" width="24" height="24">
+              <use xlink:href="assets/icons/symbols.svg#door"></use>
+            </svg>
+          </a>
+        </div>
+      </nav>
+      <div class="page-header__btn">
+        <a href="#" class="btn page-header__user-btn">
+          Войти
+          <svg class="page-header__user-icon" width="21" height="18">
+            <use xlink:href="assets/icons/symbols.svg#user"></use>
+          </svg>
+        </a>
+        <button type="button" class="page-header__nav-toggle" id="js-navToggle"></button>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <article class="article">
+      <div class="article__container">
+        <h1 class="article__title title">Заголовок страницы</h1>
+        <div class="article__content content">
+          <h1>Заголовок h1</h1>
+          <h2>Заголовок h2</h2>
+          <h4>Заголовок h4</h4>
+          <h4>Заголовок h4</h4>
+          <h5>Заголовок h5</h5>
+          <h6>Заголовок h6</h6>
+          <p>
+            Абзац текста, содержащий <b>жирный</b> текст и <a href="https://tagree.ru/" target="_blank">ссылку</a>.
+          </p>
+          <ul>
+            <li>Элемент списка 1</li>
+            <li>Элемент списка 2</li>
+            <li>Элемент списка 3</li>
+          </ul>
+          <ol>
+            <li>Элемент списка 1</li>
+            <li>Элемент списка 2</li>
+            <li>Элемент списка 3</li>
+          </ol>
+          <blockquote>
+            Здесь содержится цитата
+          </blockquote>
+          <pictire>
+            <img src="assets/images/image.jpg" alt="Подпись картинки">
+          </pictire>
+        </div>
+      </div>
+    </article>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__container">
+      <div class="page-footer__lines">
+        <div class="page-footer__line1"></div>
+        <div class="page-footer__line2"></div>
+      </div>
+      <div class="page-footer__inf inf">
+        <div class="inf__list">
+          <ul>
+            <li>
+              <a href="#">Календарь мероприятий</a>
+            </li>
+            <li>
+              <a href="#">Провести мероприятие</a>
+            </li>
+            <li>
+              <a href="#">Стать арендатором</a>
+            </li>
+            <li>
+              <a href="#">Наши проекты</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <form action="https://jsonplaceholder.typicode.com/posts" class="inf__mailing" id="js-subscribeForm">
+          <p class="mailing__p">Подпишись и будь в курсе происходящего</p>
+          <div class="inf__inputbtn">
+            <input type="email" name="email" class="inf__input" placeholder="Email" required>
+            <button type="button" class="inf__btn">Подписаться</button>
+          </div>
+          <label class="check">
+            <input type="checkbox" name="check" class="check__input" required checked>
+            <span class="check__mark"></span>
+            <p class="inf__check-text">Согласен на обработку персональных данных</p>
+          </label>
+        </form>
+      </div>
+      <div class="page-footer__soc_net">
+        <a class="page-footer__soc_net-circle">
+          <svg width="24" height="24">
+            <use xlink:href="assets/icons/symbols.svg#insta"></use>
+          </svg>
+        </a>
+        <a class="page-footer__soc_net-circle">
+          <svg width="24" height="24">
+            <use xlink:href="assets/icons/symbols.svg#vk"></use>
+          </svg>
+        </a>
+      </div>
+      <p class="page-footer__p">© Millennials 2022</p>
+      <div class="page-footer__links">
+        <div class="links__left">
+          <a href="#" class="links__p">Политика конфиденциальности</a>
+          <a href="#" class="links__p">Cookies</a>
+        </div>
+        <div class="links__right">
+          <p class="page-footer__text">Создание и продвижение</p>
+          <a href="#" class="links__right">
+            <svg class="links__p" width="56px" height="17px">
+              <use xlink:href="assets/icons/symbols.svg#tagree"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lenni Art</title>
+  <link rel="stylesheet" href="styles/styles.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&family=Roboto&display=swap">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+  <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta name="apple-mobile-web-app-title" content="Lenni Art">
+  <meta name="application-name" content="Lenni Art">
+  <meta name="theme-color" content="#dedede">
+
+  <meta name="description" content="Арт—пространство для людей, горящих сердец и делом">
+  <meta name="keywords" content="Lenni Art, пространство, мероприятия">
+  <meta property="og:title" content="Lenni Art" />
+  <meta property="og:description" content="Арт пространство для людей, горящих сердцем и делом" />
+  <meta property="og:image" content="/assets/images/lenni-art.jpg">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lenni-art.ru/" />
+</head>
+
+<body class="body">
+  <header class="page-header">
+    <div class="page-header__container">
+      <a href="index.html" class="page-header__logo">
+        <svg class="page-header__logo-icon">
+          <use xlink:href="assets/icons/symbols.svg#logo"></use>
+        </svg>
+      </a>
+      <nav class="page-header__nav">
+        <a href="events.html" class="page-header__nav-link">Мероприятия</a>
+        <a href="#" class="page-header__nav-link">Блог</a>
+        <a href="#" class="page-header__nav-link">О нас</a>
+        <a href="#" class="page-header__nav-link">Контакты</a>
+
+        <div class="page-header__nav-user">
+          <a href="#" class="page-header__nav-user-link">Александр С.</a>
+          <a href="#" class="page-header__nav-logout">
+            <svg class="page-header__nav-logout-icon" width="24" height="24">
+              <use xlink:href="assets/icons/symbols.svg#door"></use>
+            </svg>
+          </a>
+        </div>
+      </nav>
+      <div class="page-header__btn">
+        <a href="#" class="btn page-header__user-btn">
+          Войти
+          <svg class="page-header__user-icon" width="21" height="18">
+            <use xlink:href="assets/icons/symbols.svg#user"></use>
+          </svg>
+        </a>
+        <button type="button" class="page-header__nav-toggle" id="js-navToggle"></button>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="breadcrumb">
+      <a class="breadcrumb__link" href="./index.html">Главная</a>
+      <!-- prettier-ignore -->
+      <article class="breadcrumb__el">
+        <a class="breadcrumb__link" href="./events.html">Мероприятия</a>
+      </article>
+      <article class="breadcrumb__el">
+        <a class="breadcrumb__link" href="./event.html">Вечер | The Best of Sade</a>
+      </article>
+    </div>
+    <section class="event">
+      <h1 class="event__title"> Вечер | The Best of Sade</h1>
+      <div class="event__header">
+        <div class="event__header-left">
+          <div class="event__line-left"></div>
+          <time datetime="2022-12-16" class="event__date">16/12/2022</time>
+          <div class="event__text">Кафе «Птичка»</div>
+          <div class="event__line-left"></div>
+        </div>
+        <picture class="event_pictire">
+          <source media="(max-width: 1169px)" type="image/webp" srcset="assets/images/events/sade_tablet.jpg" />
+          <source media="(max-width: 1169px)" srcset="assets/images/blog/sade.jpg" />
+          <source type="image/webp" srcset="assets/images/events/sade.webp" />
+          <source media="(max-width: 450px)" type="image/webp" srcset="assets/images/events/sade.webp" />
+          <source media="(max-width: 450px)" srcset="assets/images/events/sade.jpg" />
+          <img src="assets/images/events/sade.jpg" alt="sade" class="event__img" />
+        </picture>
+        <div class="event__header-right">
+          <div class="event__line-right"></div>
+          <date datetime="2022-12-16T20:00" class="event__date">20.00 <span class="event__text">начало</span>
+          </date>
+          <div class="event__text">Ленина 10 | 2 этаж</div>
+          <div class="event__line-right"></div>
+        </div>
+      </div>
+    </section>
+    <section class="event__inf content">
+      <h5 class="article__title">Программа мероприятия:</h5>
+      <ul>
+        <li>20:15 — Приветствие гостей</li>
+        <li>20:30 — Первая подача блюд | Салаты</li>
+        <li>20:40 — Живой вокал | Композиции 1-3</li>
+        <li>21:20 — Подача горячих блюд</li>
+        <li>21:30 — Живой вокал | Композиции 4-7</li>
+        <li>22:15 — Подача десерта</li>
+        <li>22:30 — Живой вокал | Композиции 8-9</li>
+        <li>23:00 — Завершение вечера</li>
+      </ul>
+      <h5 class="article__title">The Best Of Sade</h5>
+      <p class="event__inf-text">Первый альбом-компиляция Sade, выпущенный в 1994 году. Он содержит 9 треков, включая самые популярные хиты группы, раритеты и их любимые треки.
+        <br>
+        <br>Группа продемонстрировала необычайное долголетие и креативность своей творческой карьеры.
+        <br>Она лидировала музыкальных чартах с 1994 по 1995 год, став четырехкратно платиновой в США и продав более 2 миллионов копий в Европе.
+      </p>
+      <ol>
+        <li>Your Love Is King</li>
+        <li>Hang On To Your Love</li>
+        <li>Smooth Operator</li>
+        <li>Jezebel</li>
+        <li>The Sweetest Taboo</li>
+        <li>Is It A Crime</li>
+        <li>Never As Good As The First Time</li>
+        <li>Love Is Stronger Than Pride</li>
+        <li>Paradise</li>
+      </ol>
+    </section>
+    <section class="event__reserve">
+      <form class="reserve">
+        <div class="reserve__checks">
+          <h4 class="reserve__section-title">Забронировать столик</h4>
+          <label class="reserve__check check check--red">
+            <input type="checkbox" name="table_1" class="check__input" />
+            <span class="check__mark"></span>
+            <span class="check__label">1 стол</span>
+          </label>
+          <label class="reserve__check check">
+            <input type="checkbox" name="table_2" class="check__input" />
+            <span class="check__mark"></span>
+            <span class="check__label">2 стол</span>
+          </label>
+          <label class="reserve__check check">
+            <input type="checkbox" name="table_3" class="check__input" />
+            <span class="check__mark"></span>
+            <span class="check__label">3 стол</span>
+          </label>
+          <label class="reserve__check check check--red">
+            <input type="checkbox" name="table_4" class="check__input" />
+            <span class="check__mark"></span>
+            <span class="check__label">4 стол</span>
+          </label>
+          <label class="reserve__check check check--disabled">
+            <input type="checkbox" name="table_5" class="check__input" disabled />
+            <span class="check__mark"></span>
+            <span class="check__label">5 стол </span>
+          </label>
+          <label class="reserve__check check">
+            <input type="checkbox" name="table_6" class="check__input" />
+            <span class="check__mark"></span>
+            <span class="check__label">6 стол</span>
+          </label>
+          <label class="reserve__check check check--red">
+            <input type="checkbox" name="table_7" class="check__input" />
+            <span class="check__mark"></span>
+            <span class="check__label">7 стол</span>
+          </label>
+          <label class="reserve__check check check--red">
+            <input type="checkbox" name="table_8" class="check__input" />
+            <span class="check__mark"></span>
+            <span class="check__label">8 стол</span>
+          </label>
+          <label class="reserve__check check check--red">
+            <input type="checkbox" name="table_9" class="check__input" />
+            <span class="check__mark"></span>
+            <span class="check__label">9 стол</span>
+          </label>
+          <label class="reserve__check check">
+            <input type="checkbox" name="table_10" class="check__input" />
+            <span class="check__mark"></span>
+            <span class="check__label">10 стол</span>
+          </label>
+          <label class="reserve__check check">
+            <input type="checkbox" name="table_11" class="check__input" />
+            <span class="check__mark"></span>
+            <span class="check__label">11 стол</span>
+          </label>
+        </div>
+        <div class="reserve__scheme">
+          <h4 class="reserve__scheme-title">Сцена</h4>
+          <div class="reserve__scheme-wrapper">
+            <svg class="reserve__scene scene" width="780px" height="399px">
+              <use xlink:href="assets/icons/symbols.svg#map_tables"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="reserve__order">
+          <h4 class="reserve__section-title">Ваши пригласительные билеты</h4>
+          <div class="reserve__tickets-list">
+            <div class="reserve__tickets">
+              <div class="reserve__qty" data-caption="шт." data-price="1400">0</div>
+              <div class="reserve__sum" data-currency="₽">0</div>
+            </div>
+            <div class="reserve__tickets">
+              <div class="reserve__qty" data-caption="шт." data-price="1250">0</div>
+              <div class="reserve__sum" data-currency="₽">0</div>
+            </div>
+          </div>
+          <div class="reserve__total" data-caption="Сумма" data-currency="₽">0</div>
+          <button type="submit" class="btn btn-red reserve__submit">
+            Купить билеты
+          </button>
+        </div>
+        <div class="reserve__legend legend">
+          <h4 class="reserve__section-title">Стоимость пригласительного билета</h4>
+          <div class="legend__cost">
+            <div class="legend__rect rect-red"></div>
+            <span class="legend__cost-el">1400 ₽ | 1 персона</span>
+          </div>
+          <div class="legend__cost">
+            <div class="legend__rect rect-black"></div>
+            <div class="legend__cost-el">1250 ₽ | 1 персона</div>
+          </div>
+          <h4 class="legend__title">Примечание</h4>
+          <div class="legend__cost">
+            <div class="legend__circle circle-red"></div>
+            <div class="legend__cost-el">доступные места</div>
+          </div>
+          <div class="legend__cost">
+            <div class="legend__circle circle-gray"></div>
+            <div class="legend__cost-el">забронировано</div>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__container">
+      <div class="page-footer__lines">
+        <div class="page-footer__line1"></div>
+        <div class="page-footer__line2"></div>
+      </div>
+      <div class="page-footer__inf inf">
+        <div class="inf__list">
+          <ul>
+            <li>
+              <a href="#">Календарь мероприятий</a>
+            </li>
+            <li>
+              <a href="#">Провести мероприятие</a>
+            </li>
+            <li>
+              <a href="#">Стать арендатором</a>
+            </li>
+            <li>
+              <a href="#">Наши проекты</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <form action="https://jsonplaceholder.typicode.com/posts" class="inf__mailing" id="js-subscribeForm">
+          <p class="mailing__p">Подпишись и будь в курсе происходящего</p>
+          <div class="inf__inputbtn">
+            <input type="email" name="email" class="inf__input" placeholder="Email" required>
+            <button type="button" class="inf__btn">Подписаться</button>
+          </div>
+          <label class="check">
+            <input type="checkbox" name="check" class="check__input" required checked>
+            <span class="check__mark"></span>
+            <p class="inf__check-text">Согласен на обработку персональных данных</p>
+          </label>
+        </form>
+      </div>
+      <div class="page-footer__soc_net">
+        <a class="page-footer__soc_net-circle">
+          <svg width="24" height="24">
+            <use xlink:href="assets/icons/symbols.svg#insta"></use>
+          </svg>
+        </a>
+        <a class="page-footer__soc_net-circle">
+          <svg width="24" height="24">
+            <use xlink:href="assets/icons/symbols.svg#vk"></use>
+          </svg>
+        </a>
+      </div>
+      <p class="page-footer__p">© Millennials 2022</p>
+      <div class="page-footer__links">
+        <div class="links__left">
+          <a href="#" class="links__p">Политика конфиденциальности</a>
+          <a href="#" class="links__p">Cookies</a>
+        </div>
+        <div class="links__right">
+          <p class="page-footer__text">Создание и продвижение</p>
+          <a href="#" class="links__right">
+            <svg class="links__p" width="56px" height="17px">
+              <use xlink:href="assets/icons/symbols.svg#tagree"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts/main.min.js"></script>
+</body>
+
+</html>

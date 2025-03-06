@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lenni Art</title>
+  <link rel="stylesheet" href="styles/styles.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&family=Roboto&display=swap">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+  <link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta name="apple-mobile-web-app-title" content="Lenni Art">
+  <meta name="application-name" content="Lenni Art">
+  <meta name="theme-color" content="#dedede">
+
+  <meta name="description" content="Арт—пространство для людей, горящих сердец и делом">
+  <meta name="keywords" content="Lenni Art, пространство, мероприятия">
+  <meta property="og:title" content="Lenni Art" />
+  <meta property="og:description" content="Арт пространство для людей, горящих сердцем и делом" />
+  <meta property="og:image" content="/assets/images/lenni-art.jpg">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lenni-art.ru/" />
+</head>
+
+<body class="body">
+  <header class="page-header">
+    <div class="page-header__container">
+      <a href="index.html" class="page-header__logo">
+        <svg class="page-header__logo-icon">
+          <use xlink:href="assets/icons/symbols.svg#logo"></use>
+        </svg>
+      </a>
+      <nav class="page-header__nav">
+        <a href="events.html" class="page-header__nav-link">Мероприятия</a>
+        <a href="#" class="page-header__nav-link">Блог</a>
+        <a href="#" class="page-header__nav-link">О нас</a>
+        <a href="#" class="page-header__nav-link">Контакты</a>
+
+        <div class="page-header__nav-user">
+          <a href="#" class="page-header__nav-user-link">Александр С.</a>
+          <a href="#" class="page-header__nav-logout">
+            <svg class="page-header__nav-logout-icon" width="24" height="24">
+              <use xlink:href="assets/icons/symbols.svg#door"></use>
+            </svg>
+          </a>
+        </div>
+      </nav>
+      <div class="page-header__btn">
+        <a href="#" class="btn page-header__user-btn">
+          Войти
+          <svg class="page-header__user-icon" width="21" height="18">
+            <use xlink:href="assets/icons/symbols.svg#user"></use>
+          </svg>
+        </a>
+        <button type="button" class="page-header__nav-toggle" id="js-navToggle"></button>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="breadcrumb">
+      <a class="breadcrumb__link" href="./index.html">Главная</a>
+      <!-- prettier-ignore -->
+      <article class="breadcrumb__el">
+        <a class="breadcrumb__link" href="./events.html">Мероприятия</a>
+      </article>
+    </div>
+    <section class="events events__events">
+      <div class="main__events-container">
+        <h2 class="section-title">Мероприятия</h2>
+      </div>
+      <div class="events__listing">
+        <!-- prettier-ignore -->
+        <article class="event-card  listing__event-card">
+          <a href="event.html" class="event-card__link">
+            <picture class="event-card__picture">
+              <img src="assets/images/events/nirvana.jpg" alt="Nirvana" class="event-card__img" />
+            </picture>
+            <h4 class="event-card__title">Собираемся и слушаем альбом Nirvana</h4>
+            <p class="event-card__description">Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.</p>
+            <time datetime="2022-12-07T18:00" class="event-card__time">07.12.2022 | начало 18.00</time>
+          </a>
+        </article>
+        <article class="event-card  listing__event-card">
+          <a href="event.html" class="event-card__link">
+            <picture class="event-card__picture">
+              <img src="assets/images/events/stuff.jpg" alt="Stuff" class="event-card__img" />
+            </picture>
+            <h4 class="event-card__title">Есть тема, нужно обсудить с HowStuffWorks</h4>
+            <p class="event-card__description">Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи.</p>
+            <time datetime="2022-12-14T18:30" class="event-card__time">14.12.2022 | начало 18.30</time>
+          </a>
+        </article>
+        <article class="event-card  listing__event-card">
+          <a href="event.html" class="event-card__link">
+            <picture class="event-card__picture">
+              <img src="assets/images/events/sade.jpg" alt="Sade" class="event-card__img" />
+            </picture>
+            <h4 class="event-card__title">Вечер | The Best of Sade</h4>
+            <p class="event-card__description">Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза, ритм-блюза и фанка.</p>
+            <time datetime="2022-12-07T18:00" class="event-card__time">16.12.2022 | начало 20.00</time>
+          </a>
+        </article>
+        <article class="event-card  listing__event-card">
+          <a href="event.html" class="event-card__link">
+            <picture class="event-card__picture">
+              <img src="assets/images/events/malevich.jpg" alt="Malevich exhibition" class="event-card__img" />
+            </picture>
+            <h4 class="event-card__title">Выставка Малевича в Томске</h4>
+            <p class="event-card__description">Это будет самая полная выставка с 1988 года, того времени, когда впервые заговорили о Малевиче. Экспозиция займёт два этажа павильона.</p>
+            <time datetime="2022-12-23T20:00" class="event-card__time">23.12.2022 | начало 20.00</time>
+          </a>
+        </article>
+        <article class="event-card  listing__event-card">
+          <a href="event.html" class="event-card__link">
+            <picture class="event-card__picture">
+              <img src="assets/images/events/tatler.jpg" alt="Shooting for Tatler" class="event-card__img" />
+            </picture>
+            <h4 class="event-card__title">Мастер — класс по студийной съемке от Tatler</h4>
+            <p class="event-card__description">Фотографы издания расскажут, как им удается создавать потрясающие кадры и что может испортить весь процесс.</p>
+            <time datetime="2022-12-25T13:00" class="event-card__time">25.12.2022 | начало 13.00</time>
+          </a>
+        </article>
+        <article class="event-card  listing__event-card">
+          <a href="event.html" class="event-card__link">
+            <picture class="event-card__picture">
+              <img src="assets/images/events/the_hatters.jpg" alt="The Hatters" class="event-card__img" />
+            </picture>
+            <h4 class="event-card__title">Повесилимся на славу на концерте The Hatters</h4>
+            <p class="event-card__description">Российская джипси-фолк-рок группа, основанная в 2016 году в Санкт-Петербурге. В основной состав группы входят Юрий Музыченко</p>
+            <time datetime="2022-12-27T10:00" class="event-card__time">27.12.2022 | начало 10.00</time>
+          </a>
+        </article>
+      </div>
+      <svg class="events__show-more" width="128" height="133">
+        <use xlink:href="assets/icons/symbols.svg#show_more"></use>
+      </svg>
+    </section>
+    <section class="additional-services">
+      <h2 class="section-title">Дополнительные услуги</h2>
+      <p class="additional-services__text">Перед запуском проекта, мы подготавливаем подробную смету и согласуем ее с клиентом. Убедившись, что все пожеланию учтены и мы можем приступать к реализациии проекта, начинается сложная, но интересная работа, результатом которой будет проведение вашего мероприятия на высшем уровне.</p>
+
+      <table class="events__tariffs-table  table">
+        <thead class="table__head">
+          <tr class="table__head-tr">
+            <th class="table__th table__th-first"></th>
+            <th class="table__th">Тариф «Light»</th>
+            <th class="table__th">Тариф «Promo»</th>
+            <th class="table__th">Тариф «All stars»</th>
+          </tr>
+        </thead>
+
+        <tbody class="table__body">
+          <tr class="table__tr">
+            <th class="table__body-th">Стоимость за час</th>
+            <td class="table__td">1 000 ₽</td>
+            <td class="table__td">3 000 ₽</td>
+            <td class="table__td">3 000 ₽</td>
+          </tr>
+          <tr class="table__tr">
+            <th class="table__body-th">Ведущий мероприятия</th>
+            <td class="table__td"></td>
+            <td class="table__td">
+              <span class="ok"></span>
+            </td>
+            <td class="table__td">
+              <span class="ok"></span>
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <th class="table__body-th">Фотосъемка</th>
+            <td class="table__td">
+              <span class="ok"></span>
+            </td>
+            <td class="table__td">
+              <span class="ok"></span>
+            </td>
+            <td class="table__td">
+              <span class="ok"></span>
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <th class="table__body-th">Видеосъемка</th>
+            <td class="table__td"></td>
+            <td class="table__td"></td>
+            <td class="table__td">
+              <span class="ok"></span>
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <th class="table__body-th">Организация питания</th>
+            <td class="table__td"></td>
+            <td class="table__td">
+              <span class="ok"></span>
+            </td>
+            <td class="table__td">
+              <span class="ok"></span>
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <th class="table__body-th">Декор</th>
+            <td class="table__td"></td>
+            <td class="table__td"></td>
+            <td class="table__td">
+              <span class="ok"></span>
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <th class="table__body-th">Звуковое сопровождение</th>
+            <td class="table__td"></td>
+            <td class="table__td">
+              <span class="ok"></span>
+            </td>
+            <td class="table__td">
+              <span class="ok"></span>
+            </td>
+          </tr>
+          <tr class="table__tr">
+            <th class="table__body-th">Дополнительное освещение</th>
+            <td class="table__td"></td>
+            <td class="table__td"></td>
+            <td class="table__td">
+              <span class="ok"></span>
+            </td>
+          </tr>
+
+          <tr class="table__tr">
+            <th class="table__body-th">Клининг</th>
+            <td class="table__td"></td>
+            <td class="table__td"></td>
+            <td class="table__td">
+              <span class="ok"></span>
+            </td>
+          </tr>
+        </tbody>
+
+        <tfoot class="table__footer">
+          <tr class="table__footer-tr">
+            <th class="table__footer-th"></th>
+            <th class="table__footer-th">Тариф «Light»</th>
+            <th class="table__footer-th">Тариф «Promo»</th>
+            <th class="table__footer-th">Тариф «All stars»</th>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+    <section class="offers home__offers">
+      <h3 class="offers__text">Я хочу:</h3>
+      <div class="offers__buttons">
+        <button type="submit" class="btn-red offers__btn" id="js-eventOpenBtn">Провести мероприятие</button>
+        <button type="submit" class="btn offers__btn">Стать арендатором</button>
+      </div>
+    </section>
+    <section class="events-inf">
+      <div class="events-inf__el el">
+        <div class="el__svg">
+          <svg width="24px" height="24px">
+            <use xlink:href="assets/icons/symbols.svg#information"></use>
+          </svg>
+        </div>
+        <p class="el__title">Цены</p>
+        <p class="el__text">Цены, указанные на сайте носят информационный характер. Мы придерживаемся индивидуального подхода в работе с клиентом.</p>
+      </div>
+      <div class="events-inf__el el">
+        <div class="el__svg">
+          <svg width="24px" height="24px">
+            <use xlink:href="assets/icons/symbols.svg#contact"></use>
+          </svg>
+        </div>
+        <p class="el__title">Контакты</p>
+        <p class="el__text">Отдел организации мероприятий</p>
+        <a href="#">+7 499 350 0730</a>
+        <a href="#">hi@tagree.ru</a>
+      </div>
+      <div class="events-inf__el el">
+        <div class="el__svg">
+          <svg width="24px" height="24px">
+            <use xlink:href="assets/icons/symbols.svg#handshake"></use>
+          </svg>
+        </div>
+        <p class="el__title">Преимущества</p>
+        <p class="el__text">Мы имеем все возможности для того, чтобы помочь как малому бизнесу и молодым талантам, так и большим корпорациям и холдингам.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__container">
+      <div class="page-footer__lines">
+        <div class="page-footer__line1"></div>
+        <div class="page-footer__line2"></div>
+      </div>
+      <div class="page-footer__inf inf">
+        <div class="inf__list">
+          <ul>
+            <li>
+              <a href="#">Календарь мероприятий</a>
+            </li>
+            <li>
+              <a href="#">Провести мероприятие</a>
+            </li>
+            <li>
+              <a href="#">Стать арендатором</a>
+            </li>
+            <li>
+              <a href="#">Наши проекты</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <form action="https://jsonplaceholder.typicode.com/posts" class="inf__mailing" id="js-subscribeForm">
+          <p class="mailing__p">Подпишись и будь в курсе происходящего</p>
+          <div class="inf__inputbtn">
+            <input type="email" name="email" class="inf__input" placeholder="Email" required>
+            <button type="button" class="inf__btn">Подписаться</button>
+          </div>
+          <label class="check">
+            <input type="checkbox" name="check" class="check__input" required checked>
+            <span class="check__mark"></span>
+            <p class="inf__check-text">Согласен на обработку персональных данных</p>
+          </label>
+        </form>
+      </div>
+      <div class="page-footer__soc_net">
+        <a class="page-footer__soc_net-circle">
+          <svg width="24" height="24">
+            <use xlink:href="assets/icons/symbols.svg#insta"></use>
+          </svg>
+        </a>
+        <a class="page-footer__soc_net-circle">
+          <svg width="24" height="24">
+            <use xlink:href="assets/icons/symbols.svg#vk"></use>
+          </svg>
+        </a>
+      </div>
+      <p class="page-footer__p">© Millennials 2022</p>
+      <div class="page-footer__links">
+        <div class="links__left">
+          <a href="#" class="links__p">Политика конфиденциальности</a>
+          <a href="#" class="links__p">Cookies</a>
+        </div>
+        <div class="links__right">
+          <p class="page-footer__text">Создание и продвижение</p>
+          <a href="#" class="links__right">
+            <svg class="links__p" width="56px" height="17px">
+              <use xlink:href="assets/icons/symbols.svg#tagree"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="pp" id="js-eventPP">
+    <div class="pp__wrapper">
+      <div class="pp__sticky-close">
+        <button class="pp__x-btn x-btn js-ppCloseBtn">
+          <svg class="pp__x-btn-icon">
+            <use xlink:href="assets/icons/symbols.svg#x"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="pp__container">
+        <h2 class="pp__title">Заполните форму
+          <br />и мы подберем площадку
+        </h2>
+        <form class="pp__form form" id="js-eventForm">
+          <div class="stroke">
+            <div class="field">
+              <span class="field__title">Формат мероприятия:</span>
+              <div class="radio">
+                <label class="radio__item">
+                  <input class="radio__input" type="radio" name="format" value="seminar" checked>
+                  <span class="radio__mark"></span>
+                  <span class="radio__label">Мастер-класс/семинар</span>
+                </label>
+                <label class="radio__item">
+                  <input class="radio__input" type="radio" name="format" value="concert">
+                  <span class="radio__mark"></span>
+                  <span class="radio__label">Концерт/выступление</span>
+                </label>
+                <label class="radio__item">
+                  <input class="radio__input" type="radio" name="format" value="exhibition">
+                  <span class="radio__mark"></span>
+                  <span class="radio__label">Выставка/показ</span>
+                </label>
+                <label class="radio__item">
+                  <input class="radio__input" type="radio" name="format" value="other">
+                  <span class="radio__mark"></span>
+                  <span class="radio__label">Другое</span>
+                </label>
+              </div>
+            </div>
+            <div class="field">
+              <span class="field__title">Планируемое количество посетителей:</span>
+              <select class="field__select js-selectric" name="amount">
+                <option value="20">до 20 человек</option>
+                <option value="100">от 20 до 100 человек</option>
+                <option value="500">от 100 до 500 человек</option>
+                <option value="1000">более 500 человек</option>
+              </select>
+              <div class="form__field js-dateField">
+                <span class="field__title">Дата проведения:</span>
+                <div class="field__date">
+                  <div class="field__date-inputs">
+                    <input class="field__date-input js-dateDay" type="text" placeholder="ДД" readonly />
+                    <input class="field__date-input js-dateMonth" type="text" placeholder="ММ" readonly />
+                    <input class="field__date-input field__date-input--year js-dateYear" type="text" placeholder="ГГГГ" readonly />
+                  </div>
+                  <input class="field__date-picker js-dateInput" type="text" name="date" readonly required />
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="field__title">Контактные данные:</span>
+          <div class="stroke">
+            <div class="field">
+              <span class="field__label">Имя*</span>
+              <input class="field__input" type="text" placeholder="Имя" name="name" required>
+            </div>
+            <div class="field">
+              <span class="field__label">Фамилия*</span>
+              <input class="field__input" type="text" placeholder="Фамилия" name="surname" required>
+            </div>
+            <div class="field">
+              <span class="field__label">Телефон*</span>
+              <input class="field__input js-mobileMask" type="tel" placeholder="Телефон" name="telephone" required>
+            </div>
+            <div class="field">
+              <span class="field__label">Email*</span>
+              <input class="field__input" type="email" placeholder="Email" name="email" required>
+            </div>
+          </div>
+          <span class="field__title">Есть пожелания? Напишите нам:</span>
+          <label class="stroke">
+            <textarea class="field__textarea" name="wishes"></textarea>
+          </label>
+          <label class="check">
+            <input type="checkbox" name="agree" class="check__input" required checked />
+            <span class="check__mark"></span>
+            <span class="check__label check__label--s">
+              Я соглашаюсь с пользовательским соглашением и с политикой использования персональных данных
+            </span>
+          </label>
+          <div class="pp__btns">
+            <button class="pp__btns-save btn">Отправить</button>
+            <button class="pp__btns-close btn js-ppCloseBtn">Закрыть</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="scripts/main.min.js"></script>
+</body>
+
+</html>

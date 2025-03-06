@@ -1,0 +1,102 @@
+.event{
+  position: relative;
+  @media @bw768{
+    margin-top: 80px;
+  }
+  &__title{
+    color:@black;
+    text-align: center;
+    font-family: @font2;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.28;
+    padding-bottom: 40px;
+    @media @bw1020{
+      font-size: 40px;
+    }
+    @media @bw768{
+      font-size: 20px;
+    }
+  }
+  &__header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:60px;
+    @media @bw1660{
+      gap:50px;
+    }
+    @media @bw1020{
+      gap:30px;
+    }
+    @media @bw768{
+      gap:10px;
+      margin-top: 302px;
+    }
+    &-left,
+    &-right{
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+      gap:12px;
+    }
+    &-left{
+      text-align: right;
+    }
+  }
+  &__line-left{
+    width: 139px;
+    height: 1px;
+    margin: 0 0 0 auto;
+    background: linear-gradient(270deg, #1C1B1B 0%, rgba(255, 255, 255, 0.00) 82.86%);
+  }
+  &__line-right{
+    width: 139px;
+    height: 1px;
+    margin: 0 0 0 0;
+    background: linear-gradient(90deg, #1C1B1B 0%, rgba(255, 255, 255, 0.00) 82.86%);
+  }
+  &__img{
+    min-width: 497px;
+    min-height: 532px;
+    @media @bw1660{
+      min-width: 426px;
+      min-height: 456px;
+    }
+    @media @bw1020{
+      min-width: 245px;
+      min-height: 262px;
+    }
+    @media @bw768{
+      position: absolute;
+      top:65px;
+      left: 0;
+      right:0;
+      margin:0 auto;
+    }
+  }
+  &__date{
+    color:@black;
+    font-family: @font3;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.2;
+    text-transform: uppercase;
+    @media @bw1020{
+      font-size: 18px;
+    }
+  }
+  &__text{
+    color:@black;
+    font-family: @font3;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    @media @bw1020{
+      font-size: 12px;
+    }
+  }
+}

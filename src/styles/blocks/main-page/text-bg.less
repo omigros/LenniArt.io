@@ -1,0 +1,75 @@
+.text-bg{
+    width: 100%;
+    margin:50px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    &__first{
+        display: flex;
+        @media @bw1020{
+            flex-direction: column;
+        }
+    }
+    &__text{
+        color: @black;
+        font-family: @font3;
+        font-size: 128px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+        text-wrap:nowrap;
+        position:relative;
+        @media @bw1660{
+            font-size: 90px;
+            font-weight: 700;
+            line-height: 108px;
+        }
+        @media @bw1020{
+            font-size: 80px;
+            font-weight: 700;
+            line-height: 96px;
+        }
+        @media @bw768{
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 48px;
+        }
+    }
+    &__text1{
+        text-align: left;
+        left: -52px;
+        @media @bw1660{
+            left: -38px;
+        }
+        @media @bw1020{
+            left: -26px;
+        }
+        @media @bw768{
+            left: -13px;
+        }
+    }
+    &__text11{
+        text-align: left;
+        @media @bw1020{
+            text-align: right;
+            right:-101px;
+        }
+        @media @bw768{
+            right:-69px;
+        }
+    }
+    &__text2{
+        text-align: right;
+        right: -189px;
+        @media @bw1660{
+            right:-141px;
+        }
+        @media @bw1020{
+            right:-101px;
+        }
+        @media @bw768{
+            right:0;
+            text-align: left;
+        }
+    }
+}

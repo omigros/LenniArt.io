@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('blocks/head.html')
+    <body class="body">
+        @@include('blocks/page-header.html')
+        <main class="main">
+            <div  class="breadcrumb">
+                <a class="breadcrumb__link" href="./index.html">Главная</a>
+                <!-- prettier-ignore -->
+                @@loop('./blocks/breadcrumb.html', [
+                {
+                    "link": "./events.html",
+                    "name": "Мероприятия",
+                },
+                ])
+            </div>
+            @@include('blocks/events-page/events-events.html')
+            @@include('blocks/events-page/additional-services.html')
+            @@include('blocks/offers.html')
+            @@include('blocks/events-page/events-inf.html')
+        </main>
+        @@include('blocks/page-footer.html')
+        @@include('blocks/event-pp.html')
+        <script src="scripts/main.min.js"></script>
+    </body>
+</html>

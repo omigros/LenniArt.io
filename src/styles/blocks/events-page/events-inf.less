@@ -1,0 +1,45 @@
+.events-inf{
+    .container();
+    margin: 0 0 150px 0;
+    display: flex;
+    justify-content: center;
+    gap:67px;
+    flex-wrap: wrap;
+    &__el{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:400px;
+        @media @bw1020{
+            width:280px;
+        }
+    }
+    @media @bw1660{
+        gap:30px;
+    }
+    @media @bw1020{
+        gap:50px 100px;
+    }
+    @media @bw1020{
+        gap:40px;
+    }
+}
+.el{
+    &__svg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 110px;
+        height: 110px;
+        background-color: @black;
+        margin-bottom: 40px;
+    }
+    &__title{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    &__text{
+        text-align: center;
+    }
+}

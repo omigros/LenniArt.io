@@ -1,0 +1,218 @@
+.event__reserve{
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1414px;
+  padding: 0 40px;
+  margin-bottom:120px;
+  @media @bw1020{
+    padding:0 30px;
+    margin-bottom:70px;
+  }
+  @media @bw768{
+    padding:0 20px;
+  }
+}
+.reserve {
+  display: grid;
+  gap: 65px 11%;
+  grid-template-columns: 405px calc(89% - 405px);
+  grid-template-areas: "checks scheme" "order legend"; 
+  width: 100%;
+  @media @bw1340 {
+    gap: 65px 6.5%;
+    grid-template-columns: 340px calc(93.5% - 340px);
+  }
+  @media @bw1020 {
+    gap: 60px;
+    grid-template-columns: auto 390px;
+    grid-template-areas: "scheme scheme" "checks legend" "checks order"; 
+  }
+  @media @bw768 {
+    grid-template-columns: 100%;
+    grid-template-areas: "scheme" "legend" "checks" "order"; 
+  }
+  &__section-title{
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight:700;
+  }
+  &__checks {
+    grid-area: checks;
+    display: flex;
+    flex-direction: column;
+  }
+  &__check{
+    margin-top: 10px;
+  }
+  &__scheme-title{
+    background-color: @black;
+    color: @white;
+    margin:0 auto;
+    padding: 6px 56px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__scheme {
+    grid-area: scheme;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &-wrapper {
+      position: relative;
+      width: 100%;
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        padding-top: 51.15384%;
+      }
+    }
+  }
+  &__scene {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  &__order {
+    grid-area: order;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__tickets {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 18px;
+    &-list{
+      margin-bottom: 8px;
+    }
+  }
+  &__qty {
+    &::after {
+      content: " " attr(data-caption) " | " attr(data-price);
+    }
+  }
+  &__sum {
+    font-weight: 600;
+    &::after {
+      content: attr(data-currency);
+      margin-left: 4px;
+      font-size: 0.95em;
+    }
+  }
+  &__total {
+    margin: 0 auto 53px auto;
+    font-size: 20px;
+    font-weight: 600;
+    &::before {
+      content: attr(data-caption);
+      margin-right: 30px;
+    }
+    &::after {
+      content: attr(data-currency);
+      margin-left: 4px;
+      font-size: 0.95em;
+    }
+  }
+  &__submit{
+    font-family:@font1;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  &__legend{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    text-align: right;
+    @media @bw768{
+      justify-content: left;
+      text-align: left;
+    }
+  }
+}
+.legend{
+  &__cost{
+    display: flex;
+    justify-content: right;
+    margin-bottom: 15px;
+    @media @bw768{
+      justify-content: left;
+    }
+    &-el{
+      font-size: 14px;
+    }
+  }
+  &__rect{
+    width:24px; 
+    height:24px;
+    margin-right: 9px;
+  }
+  .rect{
+    &-red{
+      background-color: @red_dark;
+    }
+    &-black{
+      background-color: @black;
+    }
+  }
+  &__title{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 23px;
+  }
+  &__circle{
+    width:23px;
+    height:23px;
+    border-radius: 50%;
+    background-color: transparent;
+    margin-right: 20px;
+  }
+  .circle{
+    &-red{
+      border: 1px solid @red_dark;
+      position: relative;
+      @media @bw768{
+        margin-left: 12px;
+      }
+      &::after{
+        content: "";
+        width:23px;
+        height:23px;
+        border-radius: 50%;
+        position: absolute;
+        right: 11px;
+        top:-0.5px;
+        border: 1px solid @black;
+      }
+    }
+    &-gray{
+      background-color: lightgray;
+      margin-right: 30px;
+    }
+  }
+}
+.check {
+  &--red {
+    color: @red;
+    .check__mark {
+      border-color: @red;
+    }
+    .check__input {
+      &:checked {
+        & ~ .check__mark {
+          background-color: @red;
+        }
+      }
+    }
+  }
+  &--disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+}

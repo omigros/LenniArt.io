@@ -1,0 +1,39 @@
+{
+    "name": "course_front",
+    "version": "1.0.0",
+    "description": "course junior frontend-developer",
+    "author": "si@tagree.ru",
+    "devDependencies": {
+        "autoprefixer": "^10.4.2",
+        "browser-sync": "^2.27.7",
+        "del": "^6.0.0",
+        "gulp": "^4.0.2",
+        "gulp-csso": "^4.0.1",
+        "gulp-file-include": "^2.3.0",
+        "gulp-format-html": "^1.2.5",
+        "gulp-imagemin": "^8.0.0",
+        "gulp-less": "^5.0.0",
+        "gulp-plumber": "^1.2.1",
+        "gulp-postcss": "^9.0.1",
+        "gulp-rename": "^2.0.0",
+        "gulp-svgmin": "^4.1.0",
+        "gulp-svgstore": "^9.0.0",
+        "gulp-terser": "^2.1.0",
+        "imagemin-gifsicle": "^7.0.0",
+        "imagemin-mozjpeg": "^10.0.0",
+        "imagemin-optipng": "^8.0.0",
+        "postcss": "^8.4.5",
+        "postcss-sort-media-queries": "^4.2.1"
+    },
+    "scripts": {
+        "build": "gulp build",
+        "serve": "gulp serve",
+        "start": "gulp start"
+    },
+    "dependencies": {
+        "@googlemaps/js-api-loader": "^1.16.3",
+        "air-datepicker": "^3.4.0",
+        "jquery": "^3.7.1",
+        "jquery-validation": "^1.20.0"
+    }
+}

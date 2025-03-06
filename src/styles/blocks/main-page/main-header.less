@@ -1,0 +1,54 @@
+.main-header{
+    width: 100%;
+    margin: 100px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @media @bw1020{
+        margin: 80px 0;
+    }
+    @media @bw768{
+        margin: 80px 0 40px 0;
+    }
+    &__title, &__text{
+        text-align: center;
+        font-family: @font2;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+        @media @bw1660{
+            font-size: 35px;
+        }
+        @media @bw1020{
+            font-size: 30px; 
+        }
+        @media @bw768{
+            font-size: 13px;
+        }
+    }
+    &__picture{
+        width: 100%;
+        margin: 70px 0;
+        @media @bw1020{
+            margin: 50px 0;
+        }
+        @media @bw768{
+            margin: 30px 0;
+        }
+        &::before{
+            content: "";
+            width:100%;
+            padding-top: 16.927%;
+        }
+    }
+    &__img{
+        width:100%;
+        height: auto;
+        object-fit: contain;
+    }
+    &__text{
+        max-width: 990px;
+        margin: 0 auto;
+    }
+}

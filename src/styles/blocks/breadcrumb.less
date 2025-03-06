@@ -1,0 +1,24 @@
+.breadcrumb{
+    .container();
+    margin: 40px 0;
+    display: flex;
+    @media @bw1340 {
+        margin: 40px 0;
+    }
+    @media @bw768 {
+        display: none;
+    }
+    &__el{
+        margin: 0 3px;
+        &::before{
+            content: "/";
+            margin-right: 3px;
+        }
+    }
+    &__link{
+        text-decoration: none;
+        &:hover{
+            color: @red_dark;
+        }
+    }
+}

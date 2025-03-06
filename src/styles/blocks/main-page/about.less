@@ -1,0 +1,209 @@
+.about{
+    &__block2{
+        display: flex;
+        position: relative;
+        @media @bw768{
+            flex-direction: column;
+            align-items: end;
+        }
+    }
+    &__block3{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 110px;
+        @media @bw1660{
+            margin-top: 87px;
+        }
+        @media @bw1340{
+            flex-direction: column;
+        }
+        @media @bw768{
+            margin-top: 50px;
+        }
+        &1{
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: space-between;
+            @media @bw1340{
+                flex-direction: row;
+            }
+            @media @bw768{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+    &__title{
+        color:@black;
+        font-family: @font1;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 50px;
+        @media @bw1020{
+            font-size: 26px;
+        }
+        @media @bw1020{
+            font-size: 18px;
+        }
+    }
+    &__title2{
+        max-width: 868px;
+        width:69%;
+        text-wrap: wrap;
+        margin-bottom: 94px;
+        @media @bw1020{
+            width:100%;
+            margin-bottom: 50px;
+        }
+    }
+    &__text, &__text2{
+        max-width: 867px;
+        flex-wrap: wrap;
+        font-family: @font1;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        float: right;
+        @media @bw1020{
+            margin-left: 70px;
+            font-size: 16px;
+        }
+        @media @bw768{
+            margin-left: 0;
+        }
+    }
+    &__text3{
+        max-width: 344px;
+        margin-top: 155px;
+        @media @bw1660{
+            margin-top: 135px;
+        }
+        @media @bw1020{
+            margin-top: 80px;
+            margin-left: 0;
+            width: 280px;
+        }
+        @media @bw1020{
+            margin-top: 60px;
+            max-width: 280px;
+            width: 100%;
+        }
+    }
+    &__img1{
+        width: 65%;
+        height: auto;
+        margin: 100px 0;
+        @media @bw1020{
+            width: 100%;
+            margin: 80px 0;
+        }
+    }
+    &__img2{
+        width: 31%;
+        height: auto;
+        position:absolute;
+        top:-50vh;
+        right: 0;
+        float:right;
+        @media @bw1020{
+            position: relative;
+            top:-28px;
+            right:0;
+            width: 37%;
+        }
+        @media @bw768{
+            width: 70%;
+            top:0;
+            margin-top: 50px;
+        }
+    }
+    &__img3{
+        position: absolute;
+        top:0;
+    }
+    &__pic3{
+        max-width: 872.402px;
+        width:100%;
+        max-height: 361.609px;
+        position: relative;
+        top:18.48px;
+        left:48.86px;
+        flex-shrink: 0;
+        @media @bw1660{
+            width: 821.409px;
+            height: 342.331px;
+            top:18px;
+            left:37.67px;
+        }
+        @media @bw1020{
+           padding-top: 41.676%;
+           width:94.915%;
+           height: 0;
+           left:4.096%;
+        }
+    }
+    &__rectangle{
+        max-width: 930px;
+        width:100%;
+        height: 246px;
+        background:@red;
+        position: absolute;
+        top:0;
+        left:0;
+        float: left;
+        @media @bw1660{
+            width:867px;
+            height: 231px;
+        }
+        @media @bw1020{
+            width:100%;
+            height: 25vw;
+        }
+    }
+    &__link{
+        float:right;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top:88px;
+        max-width: 353px;
+        @media @bw1020{
+            max-width: 262px;
+        }
+        @media @bw768{
+            margin-top: 30px;
+        }
+        &:hover{
+            color:@red_dark;
+            cursor:pointer;
+        }
+    }
+    &__btn{
+        height:60px;
+        width: 91px;
+        @media @bw1020{
+            height:40px;
+            width:67px;
+        }
+        &:hover{
+            color:@red_dark;
+            cursor:pointer;
+        }
+        &-text{
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.362;
+            color:inherit;
+            @media @bw768{
+                font-size: 14px;
+            }
+        }
+    }
+    .container();
+}

@@ -1,0 +1,29 @@
+.blog{
+    position:relative;
+    .listing__link{
+        position: absolute;
+        font-weight: 600;
+        line-height: 1.36;
+        right: 40px;
+        bottom: -100px;
+        padding: 15px 0 15px 15px;
+        text-decoration: none;
+        @media @bw1340{
+            right: 30px;
+            bottom:-65px;
+        }
+        @media @bw1020{
+            right: 30px;
+            bottom:-75px;
+        }
+        @media @bw768{
+            right: 20px;
+            bottom:-90px;
+            font-size: 14px;
+        }
+    }
+    .container();
+    @media @bw768{
+        margin-bottom:90px;
+    }
+}
